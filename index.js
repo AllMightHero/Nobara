@@ -462,7 +462,7 @@ ${msg.hi} *${pushname}* ${ucapanWaktu}
 ⎔ *Premium* : ${prem}
 
 ▢ ${msg.cretb}
-• 
+• https://github.com/AllMightHero/Nobara
 
 ${readMore}
 ${menu(prefix)} 
@@ -482,7 +482,7 @@ ${readMore}
 *VOICE COMMAND* ${msg.vnCmd(prefix)} 
 ${menuVC} 
 `
-    Fg.send3ButtonLoc(from, thumbfg, capt, `▢ *DyLux  ┃ ᴮᴼᵀ*\n▢ *Total Hits* : ${isTotalcmd}\n▢ *Usuarios* : ${User.length}\n▢ *Runtime* : ${kyun(process.uptime())}\n\n${msg.foll}`, '✆ Owner', `${prefix}owner`, '⏍ Info', `${prefix}info`, `⌬ ${msg.gp}s`, `${prefix}grupos`)
+    Fg.send3ButtonLoc(from, thumbfg, capt, `▢ *𝕹𝖔𝖇𝖆𝖗𝖆  ┃ 𝕭𝖔𝖙*\n▢ *Total Hits* : ${isTotalcmd}\n▢ *Usuarios* : ${User.length}\n▢ *Runtime* : ${kyun(process.uptime())}\n\n${msg.foll}`, '✆ Owner', `${prefix}owner`, '⏍ Info', `${prefix}info`, `⌬ ${msg.gp}s`, `${prefix}grupos`)
     break*/
     
     case 'grupos': 
@@ -579,8 +579,8 @@ case 'developer':
 ▢ Versi Wa : ${Fg.user.phone.wa_version}
 
 *≡ OWNER*
-▢ Instagram : https://www.instagram.com/fg98._
-▢ WhatsApp : wa.me/59172945992 
+▢ Instagram : https://www.instagram.com/0rumait0/
+▢ WhatsApp : wa.me/525518064309 
 
 *≡ SCRIPT*
 ▢ Git : ${package.homepage} 
