@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FG98F/dylux-bot.git"
+    "url": "git+https://github.com/AllMightHero/Nobara"
   },
   "dependencies": {
     "@adiwajshing/baileys": "^3.5.3",
@@ -64,7 +64,7 @@
   "author": "FG98",
   "license": "MIT license",
   "bugs": {
-    "url": "https://github.com/FG98F/dylux-bot/issues"
+    "url": "https://github.com/AllMightHero/Nobara/issues"
   },
-  "homepage": "https://github.com/FG98F/dylux-bot/"
+  "homepage": "https://github.com/AllMightHero/Nobara"
 }
