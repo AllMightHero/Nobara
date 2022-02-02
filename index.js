@@ -344,6 +344,13 @@ Fg.on('CB:action,,battery', json => {
 	 const isQuotedDocument = type === 'extendedTextMessage' && content.includes('documentMessage');
 	 const isQuotedLocation = type === 'extendedTextMessage' && content.includes('locationMessage');
 	 const isQuotedextendedText = type === 'extendedTextMessage' && content.includes('extendedTextMessage');
+	
+	//---
+      const sendFileFromUrl = async(link, type, options) => {
+      hasil = await getBuffer(link)
+      Fg.sendMessage(from, hasil, type, options).catch(e => { fetch(link).then((hasil) => { Fg.sendMessage(from, hasil, type, options).catch(e => { Fg.sendMessage(from, { url : link }, type, options).catch(e => {
+      m.reply('⚠️ Error')
+      })})})})}
 
 // comando de registro de la consola cuando está en un chat privado
     if (!isGroup && isCmd) {
@@ -460,10 +467,10 @@ ${msg.hi} *${pushname}* ${ucapanWaktu}
 ${readMore}
 ${menu(prefix)} 
 `
-    Fg.send3ButtonLoc(from, thumbfg, capt, `▢ *DyLux  ┃ ᴮᴼᵀ*\n▢ *Total Hits* : ${isTotalcmd}\n▢ *Usuarios* : ${User.length}\n▢ *Runtime* : ${kyun(process.uptime())}\n\n${msg.foll}`, `⦙☰ Menu Vc`, `${prefix}menuvc`, '✆ Owner', `${prefix}owner`, '⏍ Info', `${prefix}info`)
+    Fg.send3ButtonLoc(from, thumbfg, capt, `▢ *DyLux  ┃ ᴮᴼᵀ*\n▢ *Total Hits* : ${isTotalcmd}\n▢ *Usuarios* : ${User.length}\n▢ *Runtime* : ${kyun(process.uptime())}\n\n${msg.foll}`,  '✆ Owner', `${prefix}owner`, '⏍ Info', `${prefix}info`, `⌬ ${msg.gp}s`, `${prefix}grupos`)
     break
     
-    case 'menuvc': 
+   /*case 'menuvc': 
  case 'helpvc':
     capt = `────  *DyLux  ┃ ᴮᴼᵀ*  ────
     
@@ -476,7 +483,7 @@ ${readMore}
 ${menuVC} 
 `
     Fg.send3ButtonLoc(from, thumbfg, capt, `▢ *DyLux  ┃ ᴮᴼᵀ*\n▢ *Total Hits* : ${isTotalcmd}\n▢ *Usuarios* : ${User.length}\n▢ *Runtime* : ${kyun(process.uptime())}\n\n${msg.foll}`, '✆ Owner', `${prefix}owner`, '⏍ Info', `${prefix}info`, `⌬ ${msg.gp}s`, `${prefix}grupos`)
-    break 
+    break*/
     
     case 'grupos': 
     case 'groups': 
@@ -537,21 +544,11 @@ case 'lang':
 case 'creator':
 case 'creador': 
 case 'developer':
-number = '59172945992@s.whatsapp.net'
+/*number = '5215518064309@s.whatsapp.net'
     capt = `▢ ${msg.num} : @${number.split('@')[0]}\n\n`
-    capt += '▢ Instagram : https://www.instagram.com/fg98._'
-    await Fg.fakeLink(from, capt, thumbfg, `${msg.click}`, 'https://www.instagram.com/fg98._', mek)
-   /* Fg.sendContact(from, '59172945992', 'owner', {
-	 key: {
-          fromMe: false,
-	      participant: `0@s.whatsapp.net`, ...(from ? 
-	 { remoteJid: from } : {}) 
-                },
-	 message: { 
-		"extendedTextMessage": {
-                 "text":"Mi creador"
-                        }
-	                  }})*/
+    capt += '▢ Instagram : https://www.instagram.com/0rumait0/'
+    await Fg.fakeLink(from, capt, thumbfg, `${msg.click}`, 'https://www.instagram.com/0rumait0/', mek)*/
+   Fg.sendContact(from, '525518064309', 'Orumaito', mek) 
     break
     
     case 'info':
@@ -619,7 +616,7 @@ Fg.send2Button(from, teks, '*_© FG98 DyLux_*', `ꨄ︎ Apoyar`, `${prefix}donat
       hasil = fgx.reto()
       }
     capt = `‣ *${command.toUpperCase()}* \n\n${hasil}`
-    Fg.send2Button(from, capt, msg.foll, `VERDAD`, `${prefix}verdad`, `RETO`, `${prefix}reto`)
+    Fg.send2Button(from, capt, `▢ ${msg.foll}`, `VERDAD`, `${prefix}verdad`, `RETO`, `${prefix}reto`)
     break
     
     case 'fake':
@@ -794,7 +791,7 @@ case "s":
     Fg.sendMessage(from, await getBuffer(pin), image, { quoted: mek, caption: `✅ *${msg.resulf}*\n`, thumbnail: fakethumb })
  break 
 
-  case 'man':
+   case 'man':
     mann = ['hombre', 'man', 'joven guapo']
     push = pickRandom(mann)
     m.reply(msg.wait)
@@ -1119,7 +1116,7 @@ break
      buffer = await getBuffer(ttdl.result.watermark)
      if(!buffer) return m.reply('⚠️ Error')
      Fg.sendMessage(from, buffer, video, {quoted: mek, caption: msg.done})
-   }
+     }
    break
    
    case 'play': 
@@ -1942,8 +1939,7 @@ case 'riddle':
     case 'update':
     case 'actualizar':
 if (!isOwner && !isBot) return m.reply(msg.owner)
-gfg = `git remote set-url origin https://github.com/FG98F/dylux-bot.git && git pull `
-exec(`${gfg}`, (err, stdout) => {
+exec(`git pull`, (err, stdout) => {
 if (err) return m.reply(err) 
 if (stdout) m.reply(`✅ ${msg.updatef} :\n\n${stdout}`)
 })
@@ -2103,6 +2099,21 @@ case 'bot':
     if(!value) return m.reply(msg.notext)
     Fg.sendMessage(from, value, text)
     break
+    
+    case 'mediafire':
+    case 'mfire':
+    if(!value) return m.reply(msg.nolink('Mediafire'));
+   if(!isUrl(args[0]) && !args[0].includes('mediafire')) m.reply('⚠️ Link invalido');
+m.reply(msg.wait)
+mfir = await fgx.mfire(value)
+result = `   ≡ *MEDIAFIRE*
+
+▢ *${msg.nme}* : ${mfir[0].name}
+▢ *${msg.tamaño}* : ${mfir[0].size}
+▢ *Link* : ${mfir[0].link}`
+m.reply(result)
+sendFileFromUrl(mfir[0].link, document, {mimetype: mfir[0].mime, filename: mfir[0].name, quoted: mek})
+break
 
 //---
   default:
