@@ -544,11 +544,11 @@ case 'lang':
 case 'creator':
 case 'creador': 
 case 'developer':
-/*number = '5493885839638@s.whatsapp.net'
+/*number = '5215518064309@s.whatsapp.net'
     capt = `▢ ${msg.num} : @${number.split('@')[0]}\n\n`
-    capt += '▢ Instagram : https://www.instagram.com/fg98._'
-    await Fg.fakeLink(from, capt, thumbfg, `${msg.click}`, 'https://www.instagram.com/fg98._', mek)*/
-   Fg.sendContact(from, '5493885839638', 'FG98', mek) 
+    capt += '▢ Instagram : https://www.instagram.com/0rumait0/'
+    await Fg.fakeLink(from, capt, thumbfg, `${msg.click}`, 'https://www.instagram.com/0rumait0/', mek)*/
+   Fg.sendContact(from, '525518064309', 'Orumaito', mek) 
     break
     
     case 'info':
