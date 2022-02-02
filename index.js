@@ -454,7 +454,7 @@ switch (command) {
  
  case 'menu': 
  case 'help':
-    capt = `────  *DyLux  ┃ ᴮᴼᵀ*  ────
+    capt = `────  *𝕹𝖔𝖇𝖆𝖗𝖆  ┃ 𝕭𝖔𝖙*  ────
     
 ${msg.hi} *${pushname}* ${ucapanWaktu}
     
@@ -462,7 +462,7 @@ ${msg.hi} *${pushname}* ${ucapanWaktu}
 ⎔ *Premium* : ${prem}
 
 ▢ ${msg.cretb}
-• https://youtu.be/F4lGWb1WXgM 
+• 
 
 ${readMore}
 ${menu(prefix)} 
@@ -472,7 +472,7 @@ ${menu(prefix)}
     
    /*case 'menuvc': 
  case 'helpvc':
-    capt = `────  *DyLux  ┃ ᴮᴼᵀ*  ────
+    capt = `────  *𝕹𝖔𝖇𝖆𝖗𝖆  ┃ 𝕭𝖔𝖙*  ────
     
 ${msg.hi} *${pushname}* ${ucapanWaktu}
     
@@ -489,19 +489,19 @@ ${menuVC}
     case 'groups': 
     case 'dylux': 
     gps = `
-≡  *DyLux  ┃ ᴮᴼᵀ*  GRUPOS
+≡  *𝕹𝖔𝖇𝖆𝖗𝖆  ┃ 𝕭𝖔𝖙*  GRUPOS
 
 ▢ ${msg.gp} 1
-https://chat.whatsapp.com/G5sXrkhJ0pb0Tu8nhWLaFK
+https://chat.whatsapp.com/GnJT2HXA5xQApzzVL4yKMe
 
 ▢ ${msg.gp} 2
-https://chat.whatsapp.com/CDUqNRu5Kh5KY5uqQI0BKE
+
 
 ▢ ${msg.gp} 3
-https://chat.whatsapp.com/FSVDTytQxnTIPx8t8wBWeM
+
 
 ▢ *YouTube*
-• https://www.youtube.com/fg98f
+• https://youtube.com/channel/UCs1VkPC8BGr69MoZeouhDiw
 `
 m.reply(gps)
 break 
