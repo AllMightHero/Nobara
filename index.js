@@ -467,7 +467,7 @@ ${msg.hi} *${pushname}* ${ucapanWaktu}
 ${readMore}
 ${menu(prefix)} 
 `
-    Fg.send3ButtonLoc(from, thumbfg, capt, `▢ *𝕹𝖔𝖇𝖆𝖗𝖆  ┃ 𝕭𝖔𝖙*\n▢ *Total Hits* : ${isTotalcmd}\n▢ *Usuarios* : ${User.length}\n▢ *Runtime* : ${kyun(process.uptime())}\n\n${msg.foll}`, '✆ Owner', `${prefix}owner`, '⏍ Info', `${prefix}info`, `⌬ ${msg.gp}s`, `${prefix}grupos`)
+    Fg.send3ButtonLoc(from, thumbfg, capt, `▢ *𝕹𝖔𝖇𝖆𝖗𝖆  ┃ 𝕭𝖔𝖙*\n▢ *Total Hits* : ${isTotalcmd}\n▢ *Usuarios* : ${User.length}\n▢ *Runtime* : ${kyun(process.uptime())}\n\n${msg.foll}`, '.owner', `${prefix}owner`, '.info', `${prefix}info`, '.grupos', `${prefix}grupos`)
     break
     
    /*case 'menuvc': 
