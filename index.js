@@ -467,10 +467,10 @@ ${msg.hi} *${pushname}* ${ucapanWaktu}
 ${readMore}
 ${menu(prefix)} 
 `
-    Fg.send3ButtonLoc(from, thumbfg, capt, `▢ *𝕹𝖔𝖇𝖆𝖗𝖆  ┃ 𝕭𝖔𝖙*\n▢ *Total Hits* : ${isTotalcmd}\n▢ *Usuarios* : ${User.length}\n▢ *Runtime* : ${kyun(process.uptime())}\n\n${msg.foll}`, '.owner ', `${prefix}owner`, ' .info ', `${prefix}info`, '.grupos ', `${prefix}grupos`)
+    Fg.send3ButtonLoc(from, thumbfg, capt, `▢ *𝕹𝖔𝖇𝖆𝖗𝖆  ┃ 𝕭𝖔𝖙*\n▢ *Total Hits* : ${isTotalcmd}\n▢ *Usuarios* : ${User.length}\n▢ *Runtime* : ${kyun(process.uptime())}\n\n${msg.foll}`, '✆ Owner', `${prefix}owner`, '⏍ Info', `${prefix}info`, `⌬ ${msg.gp}s`, `${prefix}grupos`)
     break
     
- case 'menuvc': 
+   /*case 'menuvc': 
  case 'helpvc':
     capt = `────  *𝕹𝖔𝖇𝖆𝖗𝖆  ┃ 𝕭𝖔𝖙*  ────
     
@@ -483,7 +483,7 @@ ${readMore}
 ${menuVC} 
 `
     Fg.send3ButtonLoc(from, thumbfg, capt, `▢ *𝕹𝖔𝖇𝖆𝖗𝖆  ┃ 𝕭𝖔𝖙*\n▢ *Total Hits* : ${isTotalcmd}\n▢ *Usuarios* : ${User.length}\n▢ *Runtime* : ${kyun(process.uptime())}\n\n${msg.foll}`, '✆ Owner', `${prefix}owner`, '⏍ Info', `${prefix}info`, `⌬ ${msg.gp}s`, `${prefix}grupos`)
-    break
+    break*/
     
     case 'grupos': 
     case 'groups': 
@@ -492,7 +492,7 @@ ${menuVC}
 ≡  *𝕹𝖔𝖇𝖆𝖗𝖆  ┃ 𝕭𝖔𝖙*  GRUPOS
 
 ▢ ${msg.gp} 1
-https://chat.whatsapp.com/Hb7B72YUqtZ0UtdGejHldZ
+https://chat.whatsapp.com/GnJT2HXA5xQApzzVL4yKMe
 
 ▢ ${msg.gp} 2
 
